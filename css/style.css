@@ -1,0 +1,305 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* comienza header */
+header{
+    margin: 10px;
+    height: 50px;
+    background-color: greenyellow;
+}
+
+header nav{
+    display: flex;
+    justify-items:flex-end;
+    height: 100%;
+}
+
+header .buscar{
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+header .buscar svg{
+    width: 50%;
+}
+
+
+header nav .logo{
+    width: 45%;
+    height: 100%;
+}
+
+header nav .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+header nav .item_nav{
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+header .item_nav svg{
+    width: 50%;
+}
+
+/* termina header --------------------------------*/
+
+.anuncios{
+    width: 100%;
+    height: 40%;
+}
+
+.anuncios #carouselExampleAutoplaying{
+    box-sizing:border-box;
+}
+.anuncios #carouselExampleAutoplaying img{
+    width: 100%; /* El ancho que desees, en este caso 100% del contenedor */
+    height: 100%; /* Ajusta la altura a la medida que prefieras */
+    overflow: hidden; /* Para evitar que las imágenes desborden el contenedor */
+}
+
+/* DESTADOS------------------------------------------ */
+/* catergorias por escudo */
+.categorias-tendencia{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.categorias-tendencia .tendencia{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    margin: 3%;
+    box-shadow: 5px 5px 10px rgba(17, 14, 14, 0.089);
+}
+
+.categorias-tendencia .tendencia img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*-------------------  */
+
+.destacados{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 10px;
+    background-color:  greenyellow;
+    padding-left: 5px;
+}
+.destacados h2{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.destacados .camiseta{
+    width: 48%;
+    margin: 2.5px;
+    margin-bottom: 10px;
+    border: 2px solid #333;
+}
+
+
+.destacados .camiseta img{
+    margin: 10px;
+    width: 80%;
+    height: 50%;
+}
+
+.camiseta h2,h3{
+    text-align: left;
+    padding-left: 10px;
+}
+.camiseta h2{
+    font-size:larger;
+}
+.camiseta h3{
+    font-size: medium;
+}
+
+.camiseta p{
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+.camiseta form{
+    margin: 5px;
+}
+
+.camiseta form #Comprar{
+    padding: 5px;
+    color: white;
+    background-color: blue;
+    border-radius: 5px ;
+}
+.camiseta form #Ver{
+    padding: 5px;
+    color: white;
+    background-color: red;
+    border-radius: 5px ;
+}
+
+/*  FIN DESTADOS------------------------------------------ */
+
+.categorias-principales{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    margin-top: 15px;
+    background-color: greenyellow;
+}
+
+.categorias-principales .categoria-prendas23-24, .categoria-prendas-vintage, .categoria-todos{
+    position: relative;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    font-size: medium;
+    width: 35%;
+    height: 150px;
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+}
+
+.categorias-principales .categoria-prendas23-24 h3, .categoria-prendas-vintage h3, .categoria-todos h3{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: 1; /* Asegura que el texto esté por encima de la imagen de fondo */
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo negro semitransparente */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+
+}
+
+
+
+
+
+.categoria-prendas23-24{
+    background-image: url("../images/23-24.webp");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Sombra más grande y definida */
+    
+
+}
+
+.categoria-todos{
+    background-image: url("../images/todos.webp");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.categoria-prendas-vintage{
+    background-image: url("../images/retro.webp");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}    
+
+
+.categorias-unicas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+
+.categorias-unicas h2{
+    width: 100%;
+}
+.categorias-unicas ul h3{
+    width: 100%;
+}
+
+.categorias-unicas ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.categorias-unicas ul li{
+    font-size: small;
+}
+
+/* promociones----------- */
+
+.promociones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.promociones h2{
+    width: 100%;
+    text-align: center;
+}
+
+.promociones .camiseta-promocion{
+/*     width: 50%;
+    height: 40%;
+    background-color: greenyellow;
+    border: 2px solid #333;
+
+ */
+    width: 48%;
+    margin: 2.5px;
+    margin-bottom: 10px;
+    border: 2px solid #333;
+
+}
+
+.promociones .camiseta-promocion img{
+    margin: 10px;
+    height: 50%;
+    width: 70%;
+}
+
+
+.promociones .camiseta-promocion h2{
+    text-align: left;
+}
+
+/* -------------- */
+
+
+
+
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: auto;
+    width: 100%;
+}
+
+footer .redes{
+
+}
