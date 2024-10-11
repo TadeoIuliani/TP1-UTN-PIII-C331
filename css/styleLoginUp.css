@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #19e407;
+    background-image: url("../images/pexels-davidpickup-10930708.jpg");
+    background-size:cover;
+    padding-bottom: 20px;
+}
+.form-registro{
+    margin: 20px;
+    height: 600px;
+    /* border: 2px red solid; */
+    background-color: #333333ec;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form-registro h1{
+    margin: 20px;
+}
+
+.nombre, .apellido, .correo-electronico, .contraseña, .repetir-contraseña{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    text-align: left;
+}
+
+.nombre input{
+    padding: 10px;
+    background-color: #333333ec;
+    border: 0;
+    border-bottom: 2px solid #FAF9F6;
+    color: #FAF9F6;
+}
+
+
+.apellido input{
+    padding: 10px;
+    background-color: #333333ec;
+    border: 0;
+    border-bottom: 2px solid #FAF9F6;
+    color: #FAF9F6;
+
+}
+
+.contraseña input{
+    padding: 10px;
+    background-color: #333333ec;
+    border: 0;
+    border-bottom: 2px solid #FAF9F6;
+    color: #FAF9F6;
+}
+
+.correo-electronico input{
+    padding: 10px;
+    background-color: #333333ec;
+    border: 0;
+    border-bottom: 2px solid #FAF9F6;
+    color: #FAF9F6;
+
+}
+
+.repetir-contraseña input{
+    padding: 10px;
+    background-color: #333333ec;
+    border: 0;
+    border-bottom: 2px solid #FAF9F6;
+    color: #FAF9F6;
+}
+
+.form-registro label{
+    text-align: left;
+    font-size: 1.15rem;
+    margin-bottom: 5px;
+}
+
+.form-registro button{
+    width: 60%;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    background-color: #19e407;
+    color: #333;
+    padding: 10px;
+}
+
+.form-registro input[type="text"]{
+    padding-left: 5;
+}
