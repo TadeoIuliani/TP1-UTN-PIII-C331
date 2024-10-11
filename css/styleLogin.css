@@ -8,6 +8,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: #19e407;
     background-image: url("../images/pexels-davidpickup-10930708.jpg");
     background-size:cover;
@@ -16,7 +17,9 @@ main{
 .form-usuario{
     margin: 20px;
     height: 400px;
+    width: 80%;
     /* border: 2px red solid; */
+    max-width: 646px;
     background-color: #333333ec;
     display: flex;
     flex-direction: column;
@@ -43,6 +46,16 @@ main{
     flex-direction: column;
     margin: 25px;
 }
+
+.form-usuario .usuario input:hover{
+    background-color: #4b4747;
+}
+
+.form-usuario .contraseña input:hover{
+    background-color: #4b4747;
+}
+
+
 
 .form-usuario label{
     width: 100%;

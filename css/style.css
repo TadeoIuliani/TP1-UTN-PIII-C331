@@ -8,9 +8,9 @@ body{
     background-color: #FAF9F6;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 /* comienza header */
 header{
-    
     height: 50px;
     /* height: 5vh; */
     background-color: #19e407;
@@ -112,8 +112,16 @@ header .item_nav a svg{
     height: 50px;
     border-radius: 15px;
     margin: 3%;
-    box-shadow: 5px 5px 10px rgba(17, 14, 14, 0.089);
+    box-shadow: 5px 5px 10px rgba(17, 14, 14, 0);
 }
+.categorias-tendencia .tendencia :hover{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+
+
 
 .categorias-tendencia .tendencia img{
     width: 100%;
@@ -128,6 +136,7 @@ header .item_nav a svg{
     text-align: center;
     justify-content: center;
     margin-top: 10px;
+    gap: 2px;
     background-color:  #FAF9F6;
     
 }
@@ -141,14 +150,15 @@ header .item_nav a svg{
 
 .destacados .camiseta{
     width: 48%;
-    /* width: 25vh; */
-    margin: 2.5px;
-    margin-bottom: 10px;
+    max-width: 215px;
     border: 2px solid #333;
     box-sizing:border-box;
     overflow: hidden;
-}
 
+}
+.destacados .camiseta:hover{
+    cursor: pointer;
+}
 
 .destacados .camiseta img{
     margin: 10px;
@@ -229,9 +239,11 @@ header .item_nav a svg{
 
 }
 
-
-
-
+.seccion-nombre{
+    width: 100%;
+    padding: 3px;
+    height: auto;
+}
 
 .categoria-prendas23-24{
     background-image: url("../images/23-24.webp");
@@ -379,7 +391,7 @@ header .item_nav a svg{
     width: 30%;
     background-color: rgb(143, 243, 143);
     color: rgb(4, 68, 4);
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 /* .promociones .camiseta-promocion h4{
@@ -442,3 +454,220 @@ footer p{
     border-top: 1px solid #FAF9F6;
     margin: 2px;
 }
+
+
+@media ((min-width : 680px)) {
+    
+    body{
+        font-size: 1.3rem;
+    }
+
+    header{
+        height: 70px;
+    }
+
+    header .item_nav a svg{
+        height: 25px;
+    }
+    header .item_nav svg{
+        height: 25px;
+    }
+    header .buscar svg{
+        height: 25px;
+    }
+
+    .categorias-tendencia{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        background-color: #333;
+    }
+    
+    .categorias-tendencia .tendencia{
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px rgba(17, 14, 14, 0.089);
+    }
+    
+    .categorias-tendencia .tendencia img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .categorias-tendencia
+    
+    .destacados{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        margin-top: 10px;
+        
+        gap: 3px;
+        background-color:  #FAF9F6;
+        
+    }
+    .destacados h2{
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 2.5rem;
+        background-color: #FAF9F6;
+    }
+    
+    .destacados .camiseta{
+        /* width: 30%; */
+        /* width: 25vh; */
+        margin: 2.5px;
+        margin-bottom: 10px;
+        border: 2px solid #333;
+        box-sizing:border-box;
+        overflow: hidden;
+    }
+    
+    
+    .destacados .camiseta img{
+        margin: 10px;
+        width: 90%;
+        height: 50%;
+    }
+    
+    .camiseta h2,h3{
+        text-align: left;
+        padding-left: 10px;
+        /* font-size: 1.7rem; */
+    }
+    .camiseta h2{
+        font-size:1.2rem;
+    }
+    .camiseta h3{
+        font-size: 1.5rem;
+    }
+    
+    .camiseta p{
+        margin: 0;
+        padding: 0;
+        height: auto;
+        font-size: 1rem;
+    }
+    
+
+    .categorias-principales{
+        display: flex;
+        justify-content:space-around;
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;
+        margin-top: 15px;
+        background-color: #FAF9F6;
+    }
+    
+    .categorias-principales .categoria-prendas23-24, .categoria-prendas-vintage, .categoria-todos{
+        position: relative;
+        display:flex;
+        align-items:center;
+        text-align: center;
+        /* justify-items: center; */
+        font-size: medium;
+        width: 35%;
+        height: 200px;
+        border-radius: 10px;
+        margin: 20px;
+        color: white;
+    }
+    
+    .promociones{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        text-align: center;
+        width: 100%;
+        height: 30%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    
+    .promociones h2{
+        font-size: 2.5rem;
+    }
+    
+    .promociones .camiseta-promocion{
+        width: 218px;
+        height: 400px;
+
+        flex-direction:row;
+        justify-content:flex-start;
+
+    }
+    
+    .promociones .camiseta-promocion img{
+        margin: 10px;
+        height: 50%;
+        width: 90%;
+        text-align: center;
+    }
+
+
+    .promociones .camiseta-promocion h2{
+        width: 100%;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 10px;
+        text-align: left;
+        text-wrap: wrap;
+        font-size: 1.2rem;
+    }
+
+    .promociones .camiseta-promocion .descuento{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .promociones .camiseta-promocion .descuento h3{
+        width: 100%;
+        text-align: left;
+        margin: 0;
+        padding-left: 10px;
+        font-size: 1.4rem;
+    }
+
+    .promociones .camiseta-promocion .descuento span{
+        margin: 0;
+        padding: 5px;
+        margin-left: 10px;
+        height: 20px;
+        font-size: 1rem;
+        text-decoration: line-through;
+        box-sizing: content-box
+        }      
+
+    #numero-descuento{
+        padding: 5px;
+        justify-content: center;
+        color: white;
+        background-color: blue;
+        text-decoration: none;
+        box-sizing: content-box;
+        
+        }
+
+    #envio-texto{
+        text-align: center;
+        justify-content: center;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        width: 60%;
+        font-size: 1rem;
+    }
+
+    footer{
+        font-size: 1rem;
+    }
+}
+
