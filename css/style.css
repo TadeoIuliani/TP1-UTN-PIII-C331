@@ -3,11 +3,16 @@
     margin: 0;
 }
 
+body{
+    font-size: 1rem;
+    background-color: #FAF9F6;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 /* comienza header */
 header{
     /* margin: 10px; */
     height: 50px;
-    background-color: rgb(25, 228, 7);
+    background-color: #19e407;
 }
 
 header nav{
@@ -30,7 +35,20 @@ header .buscar svg{
 header nav .logo{
     width: 45%;
     height: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+
 }
+header nav .logo .imagen-centro{
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+}
+header nav .logo .imagen-centro img{
+    image-rendering: auto;
+}
+
 
 header nav .logo img{
     width: 100%;
@@ -41,26 +59,38 @@ header nav .item_nav{
     width: 25%;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
 
-header .item_nav svg{
+header .item_nav svg,a{
     width: 50%;
+    
 }
 
+header .item_nav a svg{
+    width: 100%;
+    align-content: center;
+    color:black;
+}
 /* termina header --------------------------------*/
 
 .anuncios{
     width: 100%;
-    height: 40%;
+    height: 100%;
 }
 
 .anuncios #carouselExampleAutoplaying{
     box-sizing:border-box;
 }
 .anuncios #carouselExampleAutoplaying img{
-    width: 100%; /* El ancho que desees, en este caso 100% del contenedor */
-    height: 100%; /* Ajusta la altura a la medida que prefieras */
-    overflow: hidden; /* Para evitar que las imágenes desborden el contenedor */
+    /* width: 100%; */ /* El ancho que desees, en este caso 100% del contenedor */
+    /* height: 100%; */ /* Ajusta la altura a la medida que prefieras */
+    overflow:visible; /* Para evitar que las imágenes desborden el contenedor */
 }
 
 /* DESTADOS------------------------------------------ */
@@ -70,7 +100,8 @@ header .item_nav svg{
     height: 30%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color: #333;
 }
 .categorias-tendencia .tendencia{
     width: 50px;
@@ -94,13 +125,15 @@ header .item_nav svg{
     flex-wrap: wrap;
     text-align: center;
     margin-top: 10px;
-    background-color:  white;
+    background-color:  #FAF9F6;
     padding-left: 5px;
 }
 .destacados h2{
     width: 100%;
     margin-bottom: 10px;
     margin-top: 10px;
+    font-size: 2.2rem;
+    background-color: #FAF9F6;
 }
 
 .destacados .camiseta{
@@ -122,13 +155,13 @@ header .item_nav svg{
 .camiseta h2,h3{
     text-align: left;
     padding-left: 10px;
-    /* font-size: xx-large; */
+    /* font-size: 1.7rem; */
 }
 .camiseta h2{
-    font-size:larger;
+    font-size:1.2rem;
 }
 .camiseta h3{
-    font-size: medium;
+    font-size: 1.5rem;
 }
 
 .camiseta p{
@@ -163,7 +196,7 @@ header .item_nav svg{
     height: auto;
     width: 100%;
     margin-top: 15px;
-    background-color: rgb(25, 228, 7);;
+    background-color: #FAF9F6;
 }
 
 .categorias-principales .categoria-prendas23-24, .categoria-prendas-vintage, .categoria-todos{
@@ -262,6 +295,8 @@ header .item_nav svg{
 .promociones h2{
     width: 100%;
     text-align: center;
+    font-size: 2.2rem;
+    
 }
 
 .promociones .camiseta-promocion{
@@ -288,10 +323,12 @@ header .item_nav svg{
 
 .promociones .camiseta-promocion h2{
     width: 55%;
-    height: 30px;
+    /* height: 30px; */
     margin-top: 20px;
     text-align: left;
-    font-size:larger;
+    text-wrap: wrap;
+
+    font-size: 1.5rem;
 }
 
 .promociones .camiseta-promocion .descuento{
@@ -315,6 +352,7 @@ header .item_nav svg{
     text-align: left;
     margin: 0;
     padding: 0;
+    font-size: 1.7rem;
 }
 
 .promociones .camiseta-promocion .descuento span{
@@ -328,6 +366,16 @@ header .item_nav svg{
     color: white;
     background-color: blue;
     text-decoration: none
+}
+
+#envio-texto{
+    padding: 0;
+    margin-top: 20px;
+    text-align: center;
+    width: 30%;
+    background-color: rgb(143, 243, 143);
+    color: rgb(4, 68, 4);
+    border-radius: 5%;
 }
 
 /* .promociones .camiseta-promocion h4{
@@ -351,8 +399,42 @@ footer{
     justify-content: flex-start;
     height: auto;
     width: 100%;
+    background-color: rgb(33, 119, 33);
+    color: white;
 }
 
-footer .redes{
 
+footer .redes{
+    width: 100%;
+    text-align: right;
+    color: white;
+    margin: 10px;
+}
+footer .redes a img{
+    color: white;
+}
+
+footer .nav-footer{
+    width: 100%;
+}
+
+footer .nav-footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+footer .nav-footer ul li{
+    display: inline;
+    margin: 10px;
+}
+
+footer p{
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #FAF9F6;
+    margin: 2px;
 }
