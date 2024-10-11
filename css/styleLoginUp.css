@@ -7,6 +7,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: #19e407;
     background-image: url("../images/pexels-davidpickup-10930708.jpg");
     background-size:cover;
@@ -16,6 +17,8 @@ main{
     margin: 20px;
     height: 600px;
     /* border: 2px red solid; */
+    width: 80%;
+    max-width: 646px;
     background-color: #333333ec;
     display: flex;
     flex-direction: column;
@@ -93,4 +96,20 @@ main{
 
 .form-registro input[type="text"]{
     padding-left: 5;
+}
+
+
+@media (min-width: 680px) {
+    header nav .buscar{
+        width: 30%;
+    }
+
+    header nav .logo .imagen-centro{
+        display: block;
+        height: 80%;
+    }
+    .form-registro label{
+        font-size: 1.2rem;
+    }
+
 }

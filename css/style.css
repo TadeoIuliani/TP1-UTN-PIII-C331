@@ -28,10 +28,19 @@ header .buscar{
     align-items: center;
 }
 
+header .buscar .imagen{
+    display: none;
+}
+
 header .buscar svg{
     width: 50%;
 }
-
+header nav .logo .buscardor{
+    display: none;
+}
+header nav .logo .buscardor input{
+    width: 90%;
+}
 
 header nav .logo{
     width: 45%;
@@ -43,6 +52,7 @@ header nav .logo{
 }
 header nav .logo .imagen-centro{
     width: 25%;
+    height: 80%;
     text-align: center;
     justify-content: center;
 }
@@ -224,6 +234,7 @@ header .item_nav a svg{
     border-radius: 10px;
     margin: 10px;
     color: white;
+    cursor: pointer;
 }
 
 .categorias-principales .categoria-prendas23-24 h3, .categoria-prendas-vintage h3, .categoria-todos h3{
@@ -328,7 +339,10 @@ header .item_nav a svg{
     justify-content: flex-start;
     box-sizing: border-box;
     overflow: hidden;
+    cursor: pointer;
 }
+
+
 
 .promociones .camiseta-promocion img{
     margin: 5px;
@@ -472,9 +486,81 @@ footer p{
     header .item_nav svg{
         height: 25px;
     }
+    
+
     header .buscar svg{
         height: 25px;
+        width: 50%;
     }
+
+    header .buscar #lupa{
+        display: none;
+    }
+
+
+    header nav .logo .buscardor{
+        display:inline;
+    }
+    header .logo .imagen-centro{
+        display: none;
+    }
+    
+    header nav .buscar{
+        width: 30%;
+    }
+    header nav .logo{
+        width: 45%;
+    }
+
+    header nav .logo .buscardor{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .buscardor button svg{
+        width: 100%;
+        background-color: #FAF9F6;
+    }
+    .buscardor button{
+        width: 10%;
+        border: 2px solid #FAF9F6;
+        background-color: #FAF9F6;
+        margin: 0;
+        padding: 0;
+    }
+
+    .buscardor input{
+        border: 2px solid #FAF9F6;
+        background-color: #FAF9F6;
+        margin: 0;
+        padding: 0;
+    }
+
+    .buscar .imagen{
+        width: 50%;
+    }
+
+    .buscar .imagen{
+        display: inline;
+        width: 50%;
+        height: 100%;
+        text-align: left;
+        justify-content: center;
+    }
+
+    .buscar .imagen a{
+        text-decoration: none;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .buscar .imagen a img{
+        margin-top: 10px;
+        width: 50%;
+        height: 80%;
+    }
+
 
     .categorias-tendencia{
         width: 100%;
@@ -671,3 +757,9 @@ footer p{
     }
 }
 
+@media (min-width: 1024px) {
+    .categorias-principales .categoria-prendas23-24, .categoria-prendas-vintage, .categoria-todos{
+        width: 25%;
+        height: 400px;    
+    }
+}

@@ -82,3 +82,25 @@ main{
 footer{
     height: auto;
 }
+
+@media (min-width: 680px) {
+    
+    header nav .buscar{
+        width: 30%;
+    }
+
+    header nav .logo .imagen-centro{
+        display: block;
+        height: 80%;
+    }
+
+    .form-usuario{
+        height: 550px;
+        width: 70%;
+    }
+    .form-usuario label{
+        font-size: 1.2rem;
+        margin: 15px;
+        margin-left: 0;
+    }
+}
