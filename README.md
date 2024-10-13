@@ -44,9 +44,13 @@ Usando la estructura estandar de un documento html, deberá crear un conjunto de
 Además, agregue la siguiente información a su archivo `README`:
 
 - ¿Hay alguna mejora que pueda hacer en su envío?
+- Me hubiese gustado que la pagina tenga eventos lo cual la haga mas dinamica.
+- <br/>
 - ¿Qué haría de manera diferente si se le asignara más tiempo?
+- Aplicaria mas "cajas" para una mejor organizacion de codigo
   <br/>
   <br/>
+
 
 ## Detalles
 
