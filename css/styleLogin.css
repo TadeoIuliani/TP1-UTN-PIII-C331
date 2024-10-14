@@ -18,7 +18,6 @@ main{
     margin: 20px;
     height: 400px;
     width: 80%;
-    /* border: 2px red solid; */
     max-width: 646px;
     background-color: #333333ec;
     display: flex;

@@ -12,7 +12,6 @@ body{
 /* comienza header */
 header{
     height: 50px;
-    /* height: 5vh; */
     background-color: #19e407;
 }
 
@@ -179,7 +178,6 @@ header .item_nav a svg{
 .camiseta h2,h3{
     text-align: left;
     padding-left: 10px;
-    /* font-size: 1.7rem; */
 }
 .camiseta h2{
     font-size:1.2rem;
@@ -329,7 +327,6 @@ header .item_nav a svg{
 .promociones .camiseta-promocion{
     width: 100%;
     height: 200px;
-    /* background-color: rgb(252, 215, 215); */
     border: 2px solid #696868;
     margin: 2.5px;
     margin-bottom: 10px;
@@ -408,13 +405,6 @@ header .item_nav a svg{
     border-radius: 10px;
 }
 
-/* .promociones .camiseta-promocion h4{
-    width: 55%;
-    height: 10%;
-    text-align: center;
-    font-size: small;
-}
- */
 
 /* -------------- */
 
@@ -605,8 +595,6 @@ footer p{
     }
     
     .destacados .camiseta{
-        /* width: 30%; */
-        /* width: 25vh; */
         margin: 2.5px;
         margin-bottom: 10px;
         border: 2px solid #333;
@@ -624,7 +612,6 @@ footer p{
     .camiseta h2,h3{
         text-align: left;
         padding-left: 10px;
-        /* font-size: 1.7rem; */
     }
     .camiseta h2{
         font-size:1.2rem;
@@ -656,7 +643,6 @@ footer p{
         display:flex;
         align-items:center;
         text-align: center;
-        /* justify-items: center; */
         font-size: medium;
         width: 35%;
         height: 200px;
@@ -685,7 +671,6 @@ footer p{
     .promociones .camiseta-promocion{
         width: 218px;
         height: 400px;
-
         flex-direction:row;
         justify-content:flex-start;
 
